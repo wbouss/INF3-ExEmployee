@@ -82,7 +82,8 @@
     </action>
 
     </action-mappings>
-   
+       <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
     <message-resources parameter="com/myapp/struts/ApplicationResources"/>    
     
     <!-- ========================= Tiles plugin ===============================-->
@@ -118,4 +119,10 @@
         <set-property property="moduleAware" value="true" />
     </plug-in>
     
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
 </struts-config>

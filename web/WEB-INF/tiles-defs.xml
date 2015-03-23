@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8" ?>
 
  <!DOCTYPE tiles-definitions PUBLIC
@@ -28,30 +27,30 @@
   <!-- Page definitions                     -->
   <!-- =======================================================  -->
 
-  <!-- Sign in page -->
+<!--   Sign in page 
   <definition name="tile.signin" extends="rootLayout">
     <put name="titleString" value="Sign in"/>
-    <put name="panel3" value="/SignIn.jsp"/>
+    <put name="panelBody" value="/signin.jsp"/>
   </definition>
 
-  <!-- Sign up page -->
+   Sign up page 
   <definition name="tile.signup" extends="rootLayout">
     <put name="titleString" value="Sign up"/>
-    <put name="panel3" value="/SignUp.jsp"/>
+    <put name="panelBody" value="/signup.jsp"/>
   </definition>
 
-  <!-- List employee page -->
+   List employee page 
   <definition name="tile.list" extends="rootLayout">
     <put name="titleString" value="List Employes"/>
-    <put name="panel3" value="/ListEmployee.jsp"/>
+    <put name="panelBody" value="/listemployee.jsp"/>
   </definition>
 
 
-  <!-- Edit a employee page -->
+   Edit a employee page 
   <definition name="tile.list" extends="rootLayout">
     <put name="titleString" value="Edit Employee"/>
-    <put name="panel3" value="/EditEmployee.jsp"/>
-  </definition>
+    <put name="panelBody" value="/editemployee.jsp"/>
+  </definition>-->
 
 
 </tiles-definitions>
