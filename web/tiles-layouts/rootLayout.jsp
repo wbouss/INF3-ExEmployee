@@ -1,17 +1,11 @@
-<%-- 
-    Document   : rootLayout
-    Created on : 23 mars 2015, 11:16:10
-    Author     : wbouss
---%>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<%@ taglib uri="/WEB-INF/struts-tiles.tld" prefix="tiles" %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<html:html>
+    <tiles:insert attribute="head"/>
+<body>
+    <tiles:insert attribute="header"/>
+    <tiles:insert attribute="panelBody"/>
+    <tiles:insert attribute="footer"/>
+</body>
+</html:html>
