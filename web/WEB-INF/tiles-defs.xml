@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
 
  <!DOCTYPE tiles-definitions PUBLIC
@@ -10,33 +11,47 @@
 -->
 
 <tiles-definitions>
+    
+  <!-- =======================================================  -->
+  <!-- Master definitions                                       -->
+  <!-- =======================================================  -->
 
-    <!-- sample tiles definitions
-    <definition name=".mainLayout" path="/common/layouts/classicLayout.jsp">
-        <put name="title"  value="Sample Page Title" />
-        <put name="header" value="/common/header.jsp" />
-        <put name="menu"   value=".mainMenu" />
-        <put name="footer" value="/common/footer.jsp" />
-        <put name="body"   value=".portal.body" />
-    </definition>
+  <!-- Page layout used as root for all pages. -->
+  <definition name="rootLayout" path="/tiles-layouts/rootLayout.jsp">
+    <put name="head" value="/tiles-components/head.jsp"/>
+    <put name="header" value="/tiles-components/header.jsp"/>
+    <put name="panelBody" value="/tiles-components/panelBody.jsp"/>
+    <put name="footer" value="/tiles-components/footer.jsp"/>
+  </definition>
 
-    <definition name=".mainMenu" path="/common/layouts/vboxLayout.jsp" >
-        <putList name="list" >
-            <add value=".menu.links" />
-            <add value=".menu.taglib.references" />
-            <add value=".menu.printer.friendly" />
-            <add value=".menu.old.documents" />
-      </putList>
-    </definition>
+  <!-- =======================================================  -->
+  <!-- Page definitions                     -->
+  <!-- =======================================================  -->
 
-    <definition name="aPage" extends=".mainLayout">
-        <put name="title"  value="Another Title" />
-        <put name="body"   value=".aPage.body" />
-    </definition>
+  <!-- Sign in page -->
+  <definition name="tile.signin" extends="rootLayout">
+    <put name="titleString" value="Sign in"/>
+    <put name="panel3" value="/SignIn.jsp"/>
+  </definition>
 
-    end samples -->
+  <!-- Sign up page -->
+  <definition name="tile.signup" extends="rootLayout">
+    <put name="titleString" value="Sign up"/>
+    <put name="panel3" value="/SignUp.jsp"/>
+  </definition>
 
-    <definition name="${YOUR_DEFINITION_HERE}">
-    </definition>
+  <!-- List employee page -->
+  <definition name="tile.list" extends="rootLayout">
+    <put name="titleString" value="List Employes"/>
+    <put name="panel3" value="/ListEmployee.jsp"/>
+  </definition>
+
+
+  <!-- Edit a employee page -->
+  <definition name="tile.list" extends="rootLayout">
+    <put name="titleString" value="Edit Employee"/>
+    <put name="panel3" value="/EditEmployee.jsp"/>
+  </definition>
+
 
 </tiles-definitions>
