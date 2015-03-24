@@ -3,7 +3,7 @@
        width="100%">
 <tr>
   <td align="center">
-    Copyright 2002 <html:link href="http://www.caraveltech.com">Fly Away Inc.</html:link>
+    Panel Footer: Copyright 2002 <html:link href="http://www.caraveltech.com">Fly Away Inc.</html:link>
   </td>
 </tr>
 </table>

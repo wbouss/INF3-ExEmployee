@@ -16,41 +16,40 @@
     </global-exceptions>
 
     <global-forwards>
-        <forward name="login" path="/login.jsp"/>
+        <forward name="welcome" path="/welcome.do"/>
     </global-forwards>
 
     <action-mappings>
         
-    <action path="/index" type="org.apache.struts.actions.ForwardAction"
-        parameter="/login.jsp" />
-    
-    <action path="/addemploye" type="org.apache.struts.actions.ForwardAction"
-        parameter="/addemploye.jsp" />
+    <action path="/welcome" forward="tile.login"  />
     
     <action path="/Login"
       type="com.myapp.struts.action.LoginAction"
       validate="true"
-      input="/login.jsp"
+      input="tile.login"
       name="loginForm"
       scope="request" >
       <forward name="success" path="/EmployeListe.do"/>
     </action>
-
+    
     <action path="/EmployeListe"
       type="com.myapp.struts.action.EmployeListeAction"
-      scope="request" >
-      <forward name="success" path="/employeliste.jsp"/>
+      name="EmployeForm"
+      scope="request"
+      input="tile.list"
+      validate="true" >
+      <forward name="success" path="tile.list"/>
     </action>
 
-    <action path="/Add"
+    <action path="/signup"
       type="com.myapp.struts.action.AddEmployeAction"
       name="employeForm"
       scope="request"
-      input="/addemploye.jsp"
+      input="tile.signup"
       validate="true" >
       <set-property property="cancellable" value="true"/>
       <forward name="success" path="/EmployeListe.do"/>
-      <forward name="error" path="/addemploye.jsp"/>
+      <forward name="error" path="tile.signup"/>
     </action>
 
     <action path="/Edit"
@@ -58,7 +57,7 @@
       name="employeForm"
       scope="request"
       validate="false" >
-      <forward name="success" path="/editemploye.jsp"/>
+      <forward name="success" path="tile.edit"/>
       <forward name="error" path="/EmployeListe.do"/>
     </action>
 
@@ -66,11 +65,11 @@
       type="com.myapp.struts.action.EditEmployeAction"
       name="employeForm"
       scope="request"
-      input="/editemploye.jsp"
+      input="tile.edit"
       validate="true" >
       <set-property property="cancellable" value="true"/>
       <forward name="success" path="/EmployeListe.do"/>
-      <forward name="error" path="/editemploye.jsp"/>
+      <forward name="error" path="tile.edit"/>
     </action>
 
     <action path="/Delete"

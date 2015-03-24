@@ -14,6 +14,7 @@
 
     <!-- Page layout used as root for all pages. -->
     <definition name="rootLayout" path="/tiles-layouts/rootLayout.jsp">
+        <put name="titleString" value="CHANGE-ME"/>
         <put name="head" value="/tiles-components/head.jsp"/>
         <put name="header" value="/tiles-components/header.jsp"/>
         <put name="panelBody" value="CHANGE-ME"/>
@@ -24,27 +25,26 @@
     <!-- Page definitions                     -->
     <!-- =======================================================  -->
 
-    Sign in page 
-    <definition name="tile.signin" extends="rootLayout">
-        <put name="titleString" value="Sign in"/>
-        <put name="panelBody" value="/signin.jsp"/>
+<!--    Sign in page -->
+    <definition name="tile.login" extends="rootLayout">
+        <put name="titleString" value="Login"/>
+        <put name="panelBody" value="/login.jsp"/>
     </definition>
 
-    Sign up page 
+<!--    Sign up page -->
     <definition name="tile.signup" extends="rootLayout">
         <put name="titleString" value="Sign up"/>
         <put name="panelBody" value="/signup.jsp"/>
     </definition>
 
-    List employee page 
+<!--    List employee page -->
     <definition name="tile.list" extends="rootLayout">
         <put name="titleString" value="List Employes"/>
-        <put name="panelBody" value="/listemployee.jsp"/>
+        <put name="panelBody" value="/listemploye.jsp"/>
     </definition>
 
-
-    Edit a employee page 
-    <definition name="tile.list" extends="rootLayout">
+<!--    Edit a employee page -->
+    <definition name="tile.edit" extends="rootLayout">
         <put name="titleString" value="Edit Employee"/>
         <put name="panelBody" value="/editemployee.jsp"/>
     </definition>

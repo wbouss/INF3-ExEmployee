@@ -1,17 +1,67 @@
-<%-- 
-    Document   : editemployee
-    Created on : 23 mars 2015, 11:19:32
-    Author     : wbouss
---%>
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+
+
+    <html:errors />
+
+    <html:form action="/EditEmploye" > 
+      <table width="500" border="0">
+        <tr>
+          <td><bean:message key="app.username" />:</td>
+          <td><html:text property="username" /></td>
+          <td><bean:message key="app.password" />:</td>
+          <td><html:password property="password" /></td>
+        </tr>
+        <tr>
+          <td><bean:message key="app.name" />:</td>
+          <td><html:text property="name" /></td>
+          <td><bean:message key="app.phone" />:</td>
+          <td><html:text property="phone" /></td>
+        </tr>
+        <tr>
+          <td><bean:message key="app.email" />:</td>
+          <td><html:text property="email" /></td>
+          <td><bean:message key="app.department" />:</td>
+    <td>
+
+      <html:select property="depid" size="1">
+              <html:option value="1">
+          <bean:message key="app.administration" />
+        </html:option>
+              <html:option value="2">
+          <bean:message key="app.computer" />
+        </html:option>
+              <html:option value="3">
+          <bean:message key="app.sales" />
+        </html:option>
+              <html:option value="4">
+          <bean:message key="app.production" />
+        </html:option>
+            </html:select>
+          
+          </td>
+        </tr>
+        <tr>
+          <td><bean:message key="app.role" />:</td>
+    <td>
+
+      <html:select property="roleid" size="1">
+              <html:option value="1">
+          <bean:message key="app.manager" />
+        </html:option>
+              <html:option value="2">
+          <bean:message key="app.employe" />
+        </html:option>
+            </html:select>
+          
+          </td>
+          <td colspan="2" align="center">
+      <html:submit />
+      <html:cancel />
+    </td>
+        </tr>
+      </table>
+    </html:form> 
