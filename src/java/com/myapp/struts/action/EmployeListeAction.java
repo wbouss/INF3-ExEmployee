@@ -1,6 +1,6 @@
 package com.myapp.struts.action;
 
-import com.myapp.struts.bean.Employe;
+import com.myapp.model.Employe;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
