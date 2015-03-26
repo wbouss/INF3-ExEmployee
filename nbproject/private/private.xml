@@ -3,13 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/editemployee.jsp</file>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/WEB-INF/struts-config.xml</file>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/WEB-INF/tiles-defs.xml</file>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/index.jsp</file>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/signup.jsp</file>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/login.jsp</file>
-            <file>file:/Users/wbouss/Desktop/Ex-Employee/web/listemploye.jsp</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/SuperAction.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/model/EmployeeManagement.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/EmployeListeAction.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/LoginAction.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/GetEmployeAction.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/model/InterfaceEmployeeManagement.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/DeleteEmployeAction.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/EditEmployeAction.java</file>
+            <file>file:/C:/Users/Yacouba/Documents/Github/INF3-ExeMPLOYEE/src/java/com/myapp/struts/action/AddEmployeAction.java</file>
         </group>
     </open-files>
 </project-private>
